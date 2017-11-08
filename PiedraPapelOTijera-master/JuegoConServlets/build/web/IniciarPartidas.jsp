@@ -13,15 +13,20 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
     </head>
+    GestorPartidas gestor = new GestorPartidas();
     <body>
-        <ul>
-            <%for (Partida opcion : GestorPartidas.getComenzadas()) {%>
-            <li><%=opcion.getFechaCreacion()%>,<%=opcion.getJugadorA()%>
-                <a href = "CompletarPartida.jsp?id=<%=opcion.getId()%>>">
-                </a>
-            </li>
+        <!Crear partida>
+        
 
-            <%{%>
-        </ul>
-    </body>
+    <!Completar partida>
+    <ul>
+        <%for (Partida opcion : GestorPartidas.getComenzadas()) {%>
+        <li><%=opcion.getFechaCreacion()%>,<%=opcion.getJugadorA()%>
+            <a href = "CompletarPartida.jsp?id=<%=opcion.getId()%>>">
+            </a>
+        </li>
+
+        <%{%>
+    </ul>
+</body>
 </html>

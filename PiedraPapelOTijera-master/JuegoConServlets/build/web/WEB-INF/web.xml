@@ -10,7 +10,7 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>es.ayesa.cursoweb</servlet-name>
-        <url-pattern>/jugarContraLaMaquina</url-pattern>
+        <url-pattern>/Partidas</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
